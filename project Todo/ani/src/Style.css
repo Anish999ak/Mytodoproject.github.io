@@ -1,0 +1,115 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main-div{
+  background-color: rgb(81, 81, 159);
+  height:100vh;
+  display:flex;
+  justify-content: center;
+}
+
+.child-div figure img{
+  height:150px;
+  width:100px;   
+}
+
+.child-div{
+  margin-top: 12rem;
+  text-align: center;
+}
+
+.child-div figure figcaption{
+  color:white;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input{
+  margin: 0.75rem;
+  width:20rem;
+  height:2rem;
+  padding:10px;
+  border-radius:5px;
+  outline-style: none;
+}
+
+input:focus{
+  border:2px solid rgb(20, 142, 83);
+}
+
+.fa{
+  color:gray;
+  margin-left:-2rem;
+  cursor: pointer;
+}
+
+.fa:hover{
+color: aqua;
+}
+
+.showitem{
+  margin-top: 1rem;
+  align-items: center;
+  overflow: hidden;
+}
+
+.effect04{
+  width:8rem;
+  height:2rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  margin-top:1rem;
+}
+
+.effect04::before,
+.effect04 span{
+  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 3000ms;
+}
+
+.effect04::before{
+content:attr(data-sm-link-text);
+position: absolute;
+transform: translateY(500%) scale(0,0);
+}
+
+.effect04:hover::before{
+  transform:translateY(0) scale(1,1);
+}
+
+.effect04:hover{
+  background-color: blue;
+}
+
+.effect:hover span{
+  transform: translateY(-500%) scale(0,0);
+}
+
+.showItems{
+ margin-top: 1.75rem;
+ align-items: center;
+}
+
+.eachItems{
+  display:flex;
+  justify-content: space-between;
+  min-width: 25rem;
+  background-color: blueviolet;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 1.745rem;
+}
+
+.icon{
+  display: flex;
+  justify-content: space-between;
+  min-width: 10px;
+}
